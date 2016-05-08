@@ -1,15 +1,29 @@
 //Anti-Theft-Function
+
 void function(int val){
+
 if(val<1020){  
+
 for(int x=0; x<180; x++){
+
 sinVal = (sin(x*(3.1412/180)));
+
 toneVal = 2000+(int(sinVal*1000));
+
 newtone(buzzer,toneVal,10);
+
 analogWrite(led,x);
+
 delay(2);
+
 }
+
 }
+
 else{ 
+
 digitalWrite(buzzer,LOW); 
+
 analogWrite(led,LOW);}
+
 }
